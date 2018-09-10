@@ -3,7 +3,7 @@ const {
 	NetworkConnectivityLevel
 } = require('@nodert-win10/windows.networking.connectivity');
 
-function checkInternet() {
+async function checkInternet() {
 	try {
 		let connection = NetworkInformation.getInternetConnectionProfile();
 		let status = (connection != null && connection.getNetworkConnectivityLevel() === NetworkConnectivityLevel.internetAccess);
