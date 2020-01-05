@@ -41,9 +41,9 @@
     "reachability"
   ],
   "dependencies": {
-    "@nodert-win10/windows.networking.connectivity": "^0.2.96"
+    "@nodert-win10-au/windows.networking.connectivity": "^0.4.4"
   },
   "devDependencies": {
-    "jest": "23.6.0"
+    "jest": "^24.9.0"
   }
 }
