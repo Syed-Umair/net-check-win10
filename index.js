@@ -6,7 +6,6 @@ const {
 async function checkInternet() {
 	try {
         if (!checkInternet.connection) {
-            console.warn('Building Ref...');
             checkInternet.connection = NetworkInformation.getInternetConnectionProfile();
         }
 		let status = (checkInternet.connection && checkInternet.connection.getNetworkConnectivityLevel && checkInternet.connection.getNetworkConnectivityLevel() === NetworkConnectivityLevel.internetAccess);
