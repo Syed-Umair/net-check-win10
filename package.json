@@ -1,6 +1,6 @@
 {
   "name": "net-check-win10",
-  "version": "0.1.0",
+  "version": "0.2.2",
   "description": "Native network access check for Windows 10. You don't need to make any Ajax request in Windows 10 to check for network access. Returns true if connected to network else return false",
   "main": "index.js",
   "repository": {
@@ -41,9 +41,9 @@
     "reachability"
   ],
   "dependencies": {
-    "@nodert-win10/windows.networking.connectivity": "^0.2.96"
+    "@nodert-win10-au/windows.networking.connectivity": "^0.4.4"
   },
   "devDependencies": {
-    "jest": "23.6.0"
+    "jest": "^24.9.0"
   }
 }
