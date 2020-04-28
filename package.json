@@ -44,6 +44,6 @@
     "@nodert-win10-au/windows.networking.connectivity": "^0.4.4"
   },
   "devDependencies": {
-    "jest": "^24.9.0"
+    "jest": "^25.5.0"
   }
 }
