@@ -1,7 +1,7 @@
 const {
 	NetworkInformation,
 	NetworkConnectivityLevel
-} = require('@nodert-win10-au/windows.networking.connectivity');
+} = require('@nodert-win10-rs4/windows.networking.connectivity');
 
 async function checkInternet() {
 	try {
