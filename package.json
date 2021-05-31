@@ -47,6 +47,6 @@
     "@nodert-win10-rs4/windows.networking.connectivity": "^0.4.4"
   },
   "devDependencies": {
-    "jest": "^26.1.0"
+    "jest": "^27.0.3"
   }
 }
