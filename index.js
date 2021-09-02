@@ -5,11 +5,9 @@ const {
 
 async function checkInternet() {
 	try {
-        if (!checkInternet.connection) {
-            checkInternet.connection = NetworkInformation.getInternetConnectionProfile();
-        }
-		let status = (checkInternet.connection && checkInternet.connection.getNetworkConnectivityLevel && checkInternet.connection.getNetworkConnectivityLevel() === NetworkConnectivityLevel.internetAccess);
-		return status;
+        checkInternet.connection = NetworkInformation.getInternetConnectionProfile();
+		return !!(checkInternet.connection && checkInternet.connection.getNetworkConnectivityLevel && checkInternet.connection.getNetworkConnectivityLevel() === NetworkConnectivityLevel.internetAccess);
+
 	} catch (e) {
 		console.error(e);
 		return false;
